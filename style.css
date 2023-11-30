@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-color: none;
+    color: #fff
+    text-align:center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav {
+    background-color: #8c52ff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    max-width: 30%;
+    border: 2px solid #0099cc;
+}
+
+iframe {
+    width: 100%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+button {
+    border-radius: 20px;
+    background-color: #0099cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px (44, 62, 80, 0.6);
+}
+nav {
+    background-color: #8c52ff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Dropdown menu styles */
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background: #8c52ff;
+    list-style: none;
+    padding: 35px 5px;
+    left: 38%;
+    transform: translateX(-20%);
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav ul li ul.dropdown li {
+    display: block;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li ul.dropdown li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background: #6d30e9;
+}

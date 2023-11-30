@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animated Login & Registration Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+	<video autoplay loop muted plays-inline class="background-clip">
+		<source src="vid.mp4" type="video/mp4">
+	</video>
+
+	<div class="wrapper">
+		<div class="form-wrapper sign-in">
+			<form action="login.php" method="post" autocomplete="off">
+				<h2>Masuk</h2>
+				<div class="input-group">
+					<input type="text" name="username" id="username" required>
+					<label for="username">Username</label>
+				</div>
+				<div class="input-group">
+					<input type="password" name="password" id="password" required>
+					<label for="password">Password</label>
+				</div>
+				<div class="remember">
+					<label><input type="checkbox">Ingat Saya</label>
+				</div>
+				<button type="submit">Masuk</button>
+				<div class="signUp-link">
+					<p>Belum punya akun? <a href="#"class="signUpBtn-link">Daftar</a></p>
+				</div>
+				<div class="social-platform">
+					<p>Atau masuk dengan</p>
+					<div class="social-icons">
+						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#"><i class="fa-brands fa-google"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="form-wrapper sign-up">
+			<form action="register.php" method="post" autocomplete="off" onsubmit="return validateForm();">
+				<h2>Daftar</h2>
+				<div class="input-group">
+					<input type="text" name="fullname" id="fullname" required>
+					<label for="fullname">Nama Lengkap</label>
+				</div>
+				<div class="input-group">
+					<input type="text" name="username" id="username" required>
+					<label for="username">Username</label>
+				</div>
+				<div class="input-group">
+					<input type="number" name="phoneNumber" id="phoneNumber" required>
+					<label for="phoneNumber">No HP</label>
+				</div>
+				<div class="input-group">
+					<input type="text" name="email" id="email" required >
+					<label for="email">Email</label>
+				</div>
+				<div class="input-group">
+					<input type="password" name="password" id="password" required>
+					<label for="password">Password</label>
+				</div>
+				<div class="remember">
+					<label for="checkbox"><input type="checkbox" id="checkbox" name="checkbox">Saya setuju dengan syarat dan ketentuan</label>
+					<br>
+					<span id="error-message" class="error-message"></span>	
+				</div>
+				<button type="submit" name="register">Daftar</button>
+				<div class="signUp-link">
+					<p>Sudah punya akun? <a href="#"class="signInBtn-link">Masuk</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
